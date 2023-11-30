@@ -10,18 +10,43 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { blue } from "@mui/material/colors";
+
+const emotionsData = [
+  { name: "Radość", description: "Pełen entuzjazmu i uśmiechu!" },
+  { name: "Zaskoczenie", description: "Zdziwiony i pod wrażeniem." },
+  { name: "Smutek", description: "Trochę przygnębiony i smutny." },
+  { name: "Złość", description: "Sfrustrowany i zagniewany." },
+  { name: "Strach", description: "Przerażony i pełen niepokoju." },
+  { name: "Miłość", description: "Pełen ciepła i uczucia." },
+  { name: "Optymizm", description: "Pełen pozytywnej energii." },
+  { name: "Zawód", description: "Trochę rozczarowany i przybity." },
+  { name: "Spokój", description: "Cichy i zrelaksowany." },
+];
+
+const squareStyle = {
+  width: "240px",
+  height: "240px",
+  backgroundColor: blue[500],
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  color: "#fff",
+};
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        MoodyMovie.com
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -88,44 +113,13 @@ export default function Album() {
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid xs={12} sm={6} md={4}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={
-                      {
-                        // 16:9
-                        // pt: "56.25%",
-                      }
-                    }
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                      align="center"
-                    >
-                      Radość
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Wybierz</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
+          <Grid container spacing={2}>
+            {emotionsData.map((emotion, index) => (
+              <Grid item key={index} xs={4}>
+                <Paper style={squareStyle}>
+                  <Typography variant="subtitle1">{emotion.name}</Typography>
+                  <Typography variant="body2">{emotion.description}</Typography>
+                </Paper>
               </Grid>
             ))}
           </Grid>
