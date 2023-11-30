@@ -16,24 +16,61 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { blue } from "@mui/material/colors";
+import {
+  red,
+  pink,
+  purple,
+  deepPurple,
+  indigo,
+  blue,
+  lightBlue,
+  cyan,
+  teal,
+} from "@mui/material/colors";
 
 const emotionsData = [
-  { name: "Radość", description: "Pełen entuzjazmu i uśmiechu!" },
-  { name: "Zaskoczenie", description: "Zdziwiony i pod wrażeniem." },
-  { name: "Smutek", description: "Trochę przygnębiony i smutny." },
-  { name: "Złość", description: "Sfrustrowany i zagniewany." },
-  { name: "Strach", description: "Przerażony i pełen niepokoju." },
-  { name: "Miłość", description: "Pełen ciepła i uczucia." },
-  { name: "Optymizm", description: "Pełen pozytywnej energii." },
-  { name: "Zawód", description: "Trochę rozczarowany i przybity." },
-  { name: "Spokój", description: "Cichy i zrelaksowany." },
+  {
+    name: "Radość",
+    description: "Pełen entuzjazmu i uśmiechu.",
+    color: red[500],
+  },
+  {
+    name: "Zaskoczenie",
+    description: "Zdziwiony i pod wrażeniem.",
+    color: pink[500],
+  },
+  {
+    name: "Smutek",
+    description: "Trochę przygnębiony i smutny.",
+    color: purple[500],
+  },
+  {
+    name: "Złość",
+    description: "Sfrustrowany i zagniewany.",
+    color: deepPurple[500],
+  },
+  {
+    name: "Strach",
+    description: "Przerażony i pełen niepokoju.",
+    color: indigo[500],
+  },
+  { name: "Miłość", description: "Pełen ciepła i uczucia.", color: blue[500] },
+  {
+    name: "Optymizm",
+    description: "Pełen pozytywnej energii.",
+    color: lightBlue[500],
+  },
+  {
+    name: "Zawód",
+    description: "Trochę rozczarowany i przybity.",
+    color: cyan[500],
+  },
+  { name: "Spokój", description: "Cichy i zrelaksowany.", color: teal[500] },
 ];
 
 const squareStyle = {
   width: "240px",
   height: "240px",
-  backgroundColor: blue[500],
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -116,7 +153,9 @@ export default function Album() {
           <Grid container spacing={2}>
             {emotionsData.map((emotion, index) => (
               <Grid item key={index} xs={4}>
-                <Paper style={squareStyle}>
+                <Paper
+                  style={{ ...squareStyle, backgroundColor: emotion.color }}
+                >
                   <Typography variant="subtitle1">{emotion.name}</Typography>
                   <Typography variant="body2">{emotion.description}</Typography>
                 </Paper>
