@@ -25,7 +25,7 @@ const CalmComponent = () => {
   return (
     <Paper style={squareStyle}>
       <Typography variant="subtitle1">Spokój</Typography>
-      <Typography variant="body2">"Cichy i zrelaksowany."</Typography>
+      <Typography variant="body2">Cichy i zrelaksowany.</Typography>
     </Paper>
   );
 };
