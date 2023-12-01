@@ -1,5 +1,5 @@
-import Copyright from "./Copyright";
+import StartPage from "./StartPage";
 
 export default function App() {
-  return <Copyright></Copyright>;
+  return <StartPage></StartPage>;
 }

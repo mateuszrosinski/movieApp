@@ -2,15 +2,10 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import MovieFilterIcon from "@mui/icons-material/MovieFilter";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -26,8 +21,18 @@ import {
   lightBlue,
   cyan,
   teal,
+  deepGreen,
 } from "@mui/material/colors";
-
+import DissapointmentComponent from "./EmotionComponents/DissapointmentComponent";
+import JoyComponent from "./EmotionComponents/JoyComponent";
+import LoveComponent from "./EmotionComponents/LoveComponent";
+import FearComponent from "./EmotionComponents/FearComponent";
+import AngerComponent from "./EmotionComponents/AngerComponent";
+import CalmComponent from "./EmotionComponents/CalmComponent";
+import OptimismComponent from "./EmotionComponents/OptimismComponent";
+import SadnessComponent from "./EmotionComponents/SadnessComponent";
+import SurpriseComponent from "./EmotionComponents/SurpriseComponent";
+import RecklessComponent from "./EmotionComponents/RecklessComponent";
 const emotionsData = [
   {
     name: "Radość",
@@ -91,12 +96,10 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function Album() {
+export default function StartPage() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
@@ -151,16 +154,37 @@ export default function Album() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={2}>
-            {emotionsData.map((emotion, index) => (
-              <Grid item key={index} xs={4}>
-                <Paper
-                  style={{ ...squareStyle, backgroundColor: emotion.color }}
-                >
-                  <Typography variant="subtitle1">{emotion.name}</Typography>
-                  <Typography variant="body2">{emotion.description}</Typography>
-                </Paper>
-              </Grid>
-            ))}
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <JoyComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <LoveComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <FearComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <AngerComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <CalmComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <DissapointmentComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <OptimismComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <SadnessComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <SurpriseComponent />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <RecklessComponent />
+            </Grid>
+            {/* Dodaj pozostałe komponenty dla innych emocji tutaj */}
           </Grid>
         </Container>
       </main>
