@@ -25,7 +25,7 @@ const DissapointmentComponent = () => {
   return (
     <Paper style={squareStyle}>
       <Typography variant="subtitle1">Rozczarowanie</Typography>
-      <Typography variant="body2">"Trochę rozczarowany i przybity."</Typography>
+      <Typography variant="body2">Trochę rozczarowany i przybity.</Typography>
     </Paper>
   );
 };
