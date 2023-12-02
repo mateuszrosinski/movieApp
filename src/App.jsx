@@ -1,5 +1,12 @@
-import StartPage from "./StartPage";
+import React from "react";
+import AppRouter from "./AppRouter";
 
-export default function App() {
-  return <StartPage></StartPage>;
-}
+const App = () => {
+  return (
+    <div>
+      <AppRouter />
+    </div>
+  );
+};
+
+export default App;

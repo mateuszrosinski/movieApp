@@ -11,18 +11,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import {
-  red,
-  pink,
-  purple,
-  deepPurple,
-  indigo,
-  blue,
-  lightBlue,
-  cyan,
-  teal,
-  deepGreen,
-} from "@mui/material/colors";
 import DissapointmentComponent from "./EmotionComponents/DissapointmentComponent";
 import JoyComponent from "./EmotionComponents/JoyComponent";
 import LoveComponent from "./EmotionComponents/LoveComponent";
@@ -33,55 +21,6 @@ import OptimismComponent from "./EmotionComponents/OptimismComponent";
 import SadnessComponent from "./EmotionComponents/SadnessComponent";
 import SurpriseComponent from "./EmotionComponents/SurpriseComponent";
 import RecklessComponent from "./EmotionComponents/RecklessComponent";
-const emotionsData = [
-  {
-    name: "Radość",
-    description: "Pełen entuzjazmu i uśmiechu.",
-    color: red[500],
-  },
-  {
-    name: "Zaskoczenie",
-    description: "Zdziwiony i pod wrażeniem.",
-    color: pink[500],
-  },
-  {
-    name: "Smutek",
-    description: "Trochę przygnębiony i smutny.",
-    color: purple[500],
-  },
-  {
-    name: "Złość",
-    description: "Sfrustrowany i zagniewany.",
-    color: deepPurple[500],
-  },
-  {
-    name: "Strach",
-    description: "Przerażony i pełen niepokoju.",
-    color: indigo[500],
-  },
-  { name: "Miłość", description: "Pełen ciepła i uczucia.", color: blue[500] },
-  {
-    name: "Optymizm",
-    description: "Pełen pozytywnej energii.",
-    color: lightBlue[500],
-  },
-  {
-    name: "Zawód",
-    description: "Trochę rozczarowany i przybity.",
-    color: cyan[500],
-  },
-  { name: "Spokój", description: "Cichy i zrelaksowany.", color: teal[500] },
-];
-
-const squareStyle = {
-  width: "240px",
-  height: "240px",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  color: "#fff",
-};
 
 function Copyright() {
   return (

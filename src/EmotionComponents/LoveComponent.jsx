@@ -1,6 +1,6 @@
 // W pliku LoveComponent.js
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Paper, Typography, Link } from "@mui/material";
 import { pink } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -24,10 +24,13 @@ const LoveComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Miłość</Typography>
-      <Typography variant="body2">Pełen ciepła i uczucia.</Typography>
-    </Paper>
+    <Link href="/LoveView">
+      {/* Dodaj link do podstrony "Miłości" */}
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Miłość</Typography>
+        <Typography variant="body2">Pełen ciepła i uczucia.</Typography>
+      </Paper>
+    </Link>
   );
 };
 
