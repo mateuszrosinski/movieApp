@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { purple } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -23,10 +23,12 @@ const SadnessComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Smutek</Typography>
-      <Typography variant="body2">Trochę przygnębiony i smutny.</Typography>
-    </Paper>
+    <Link href="/SadnessView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Smutek</Typography>
+        <Typography variant="body2">Trochę przygnębiony i smutny.</Typography>
+      </Paper>
+    </Link>
   );
 };
 

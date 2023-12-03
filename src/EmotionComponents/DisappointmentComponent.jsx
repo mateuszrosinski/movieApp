@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { cyan } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -23,10 +23,12 @@ const DissapointmentComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Rozczarowanie</Typography>
-      <Typography variant="body2">Trochę rozczarowany i przybity.</Typography>
-    </Paper>
+    <Link href="/DisappointmentView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Rozczarowanie</Typography>
+        <Typography variant="body2">Trochę rozczarowany i przybity.</Typography>
+      </Paper>
+    </Link>
   );
 };
 

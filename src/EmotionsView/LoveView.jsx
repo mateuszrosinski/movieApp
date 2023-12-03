@@ -1,39 +1,37 @@
-// EmotionsView/LoveView.js
+// LoveView.js
 import React from "react";
 import { Paper, Typography } from "@mui/material";
+import ViewStyles from "./View";
 
 const LoveView = () => {
   return (
     <Paper
-      style={{
-        padding: "20px",
-        backgroundColor: "#ff4081",
-        color: "#fff",
-        textAlign: "center",
-      }}
+      style={{ ...ViewStyles.paper, backgroundColor: "#e91e63", color: "#fff" }}
     >
-      <Typography variant="h4">Miłość</Typography>
-      <Typography variant="body1">
-        Miłość to jedna z najpiękniejszych i najważniejszych emocji, której
-        trudno jest znaleźć dokładne określenie. To uczucie łączy ludzi w
-        głęboki sposób, pełen ciepła, zaufania i zrozumienia.
+      <Typography variant="h4" style={ViewStyles.heading}>
+        Miłość
       </Typography>
-      <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Kolor związany z miłością: #ff4081
+      <Typography variant="body1" style={ViewStyles.description}>
+        Miłość to jedna z najpiękniejszych emocji, charakteryzująca się silnym
+        uczuciem przywiązania i bliskości.
       </Typography>
-      <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Lista filmów o miłości:
+      <Typography variant="h6" style={ViewStyles.colorAssociated}>
+        Kolor związany z miłością: #e91e63
       </Typography>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
-        <li>Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.</li>
-        <li>Tytuł filmu 2: Opis filmu 2. Gra w nim Aktor 2.</li>
-        <li>Tytuł filmu 3: Opis filmu 3. Gra w nim Aktor 3.</li>
-        <li>Tytuł filmu 4: Opis filmu 4. Gra w nim Aktor 4.</li>
-        <li>Tytuł filmu 5: Opis filmu 5. Gra w nim Aktor 5.</li>
+      <Typography variant="h6" style={ViewStyles.colorAssociated}>
+        Lista filmów wywołujących miłość:
+      </Typography>
+      <ul style={ViewStyles.filmList}>
+        <li style={ViewStyles.filmListItem}>
+          Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.
+        </li>
+        <li style={ViewStyles.filmListItem}>
+          Tytuł filmu 2: Opis filmu 2. Gra w nim Aktor 2.
+        </li>
+        {/* ... inne filmy ... */}
       </ul>
     </Paper>
   );
 };
 
-console.log("Mam katza i psa");
 export default LoveView;

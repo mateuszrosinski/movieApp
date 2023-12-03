@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { lightBlue } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -23,10 +23,12 @@ const OptimismComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Optymizm</Typography>
-      <Typography variant="body2">Pełen pozytywnej energii.</Typography>
-    </Paper>
+    <Link href="/OptimismView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Optymizm</Typography>
+        <Typography variant="body2">Pełen pozytywnej energii.</Typography>
+      </Paper>
+    </Link>
   );
 };
 
