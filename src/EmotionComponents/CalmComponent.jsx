@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { teal } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -23,10 +23,14 @@ const CalmComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Spokój</Typography>
-      <Typography variant="body2">Cichy i zrelaksowany.</Typography>
-    </Paper>
+    <Link href="/CalmView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1" align="center">
+          Spokój
+        </Typography>
+        <Typography variant="body2">Cichy i zrelaksowany.</Typography>
+      </Paper>
+    </Link>
   );
 };
 

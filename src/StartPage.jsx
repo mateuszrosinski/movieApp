@@ -11,8 +11,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-<<<<<<< HEAD
->>>>>>> 6e84313b23e4ad16724d1aca899b153f9a940aee
 import DissapointmentComponent from "./EmotionComponents/DissapointmentComponent";
 import JoyComponent from "./EmotionComponents/JoyComponent";
 import LoveComponent from "./EmotionComponents/LoveComponent";
@@ -23,9 +21,6 @@ import OptimismComponent from "./EmotionComponents/OptimismComponent";
 import SadnessComponent from "./EmotionComponents/SadnessComponent";
 import SurpriseComponent from "./EmotionComponents/SurpriseComponent";
 import RecklessComponent from "./EmotionComponents/RecklessComponent";
-<<<<<<< HEAD
-
->>>>>>> 6e84313b23e4ad16724d1aca899b153f9a940aee
 
 function Copyright() {
   return (

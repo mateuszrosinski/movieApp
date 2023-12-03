@@ -1,28 +1,29 @@
-// EmotionsView/LoveView.js
+// EmotionsView/JoyView.js
 import React from "react";
 import { Paper, Typography } from "@mui/material";
 
-const LoveView = () => {
+const JoyView = () => {
   return (
     <Paper
       style={{
         padding: "20px",
-        backgroundColor: "#ff4081",
-        color: "#fff",
+        backgroundColor: "#ffeb3b",
+        color: "#000",
         textAlign: "center",
       }}
     >
-      <Typography variant="h4">Miłość</Typography>
+      <Typography variant="h4" align="center">
+        Radość
+      </Typography>
       <Typography variant="body1">
-        Miłość to jedna z najpiękniejszych i najważniejszych emocji, której
-        trudno jest znaleźć dokładne określenie. To uczucie łączy ludzi w
-        głęboki sposób, pełen ciepła, zaufania i zrozumienia.
+        Radość to jedna z najpozytywniejszych emocji, charakteryzująca się
+        uczuciem szczęścia, entuzjazmu i pozytywnego podejścia do życia.
       </Typography>
       <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Kolor związany z miłością: #ff4081
+        Kolor związany z radością: #ffeb3b
       </Typography>
       <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Lista filmów o miłości:
+        Lista filmów wywołujących radość:
       </Typography>
       <ul style={{ listStyleType: "none", padding: 0 }}>
         <li>Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.</li>
@@ -35,5 +36,4 @@ const LoveView = () => {
   );
 };
 
-console.log("Mam katza i psa");
-export default LoveView;
+export default JoyView;

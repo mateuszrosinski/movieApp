@@ -1,6 +1,6 @@
 // W pliku FearComponent.js
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { deepPurple } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -24,10 +24,12 @@ const AngerComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Złość</Typography>
-      <Typography variant="body2">Sfrustrowany i zagniewany.</Typography>
-    </Paper>
+    <Link href="/AngerView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Złość</Typography>
+        <Typography variant="body2">Sfrustrowany i zagniewany.</Typography>
+      </Paper>
+    </Link>
   );
 };
 

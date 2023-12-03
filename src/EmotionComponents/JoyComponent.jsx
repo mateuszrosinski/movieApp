@@ -1,6 +1,6 @@
 // W pliku JoyComponent.js
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { red } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -24,10 +24,12 @@ const JoyComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Radość</Typography>
-      <Typography variant="body2">Pełen entuzjazmu i uśmiechu.</Typography>
-    </Paper>
+    <Link href="/JoyView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Radość</Typography>
+        <Typography variant="body2">Pełen entuzjazmu i uśmiechu.</Typography>
+      </Paper>
+    </Link>
   );
 };
 
