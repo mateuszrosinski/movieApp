@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import DissapointmentComponent from "./EmotionComponents/DissapointmentComponent";
+import DisappointmentComponent from "./EmotionComponents/DisappointmentComponent";
 import JoyComponent from "./EmotionComponents/JoyComponent";
 import LoveComponent from "./EmotionComponents/LoveComponent";
 import FearComponent from "./EmotionComponents/FearComponent";
@@ -109,7 +109,7 @@ export default function StartPage() {
               <CalmComponent />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={4}>
-              <DissapointmentComponent />
+              <DisappointmentComponent />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={4}>
               <OptimismComponent />

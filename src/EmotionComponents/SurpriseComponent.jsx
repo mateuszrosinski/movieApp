@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { pink } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -23,10 +23,12 @@ const SurpriseComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Zaskoczenie</Typography>
-      <Typography variant="body2">Zdziwiony i pod wrażeniem.</Typography>
-    </Paper>
+    <Link href="/SurpriseView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Zaskoczenie</Typography>
+        <Typography variant="body2">Zdziwiony i pod wrażeniem.</Typography>
+      </Paper>
+    </Link>
   );
 };
 
