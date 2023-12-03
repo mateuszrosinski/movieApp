@@ -1,28 +1,27 @@
-// EmotionsView/LoveView.js
+// EmotionsView/FearView.js
 import React from "react";
 import { Paper, Typography } from "@mui/material";
 
-const LoveView = () => {
+const FearView = () => {
   return (
     <Paper
       style={{
         padding: "20px",
-        backgroundColor: "#ff4081",
+        backgroundColor: "#3f51b5",
         color: "#fff",
         textAlign: "center",
       }}
     >
-      <Typography variant="h4">Miłość</Typography>
+      <Typography variant="h4">Strach</Typography>
       <Typography variant="body1">
-        Miłość to jedna z najpiękniejszych i najważniejszych emocji, której
-        trudno jest znaleźć dokładne określenie. To uczucie łączy ludzi w
-        głęboki sposób, pełen ciepła, zaufania i zrozumienia.
+        Strach to silna, emocjonalna reakcja na zagrożenie. Oglądanie strasznych
+        filmów może pobudzić układ nerwowy, powodując uczucie niepokoju i lęku.
       </Typography>
       <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Kolor związany z miłością: #ff4081
+        Kolor związany ze strachem: #3f51b5
       </Typography>
       <Typography variant="h6" style={{ marginTop: "20px" }}>
-        Lista filmów o miłości:
+        Lista strasznych filmów:
       </Typography>
       <ul style={{ listStyleType: "none", padding: 0 }}>
         <li>Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.</li>
@@ -35,5 +34,4 @@ const LoveView = () => {
   );
 };
 
-console.log("Mam katza i psa");
-export default LoveView;
+export default FearView;

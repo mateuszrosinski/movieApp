@@ -1,6 +1,6 @@
 // W pliku FearComponent.js
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import { indigo } from "@mui/material/colors";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -24,10 +24,12 @@ const FearComponent = () => {
   };
 
   return (
-    <Paper style={squareStyle}>
-      <Typography variant="subtitle1">Strach</Typography>
-      <Typography variant="body2">Przerażony i pełen niepokoju.</Typography>
-    </Paper>
+    <Link href="/FearView">
+      <Paper style={squareStyle}>
+        <Typography variant="subtitle1">Strach</Typography>
+        <Typography variant="body2">Przerażony i pełen niepokoju.</Typography>
+      </Paper>
+    </Link>
   );
 };
 
