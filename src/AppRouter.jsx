@@ -1,6 +1,8 @@
 // AppRouter.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RegistrationForm from "./Registration/RegistrationForm";
+import LoginForm from "./Registration/LoginForm";
 import AngerView from "./EmotionsView/AngerView";
 import CalmView from "./EmotionsView/CalmView";
 import DisappointmentView from "./EmotionsView/DisappointmentView";
@@ -17,6 +19,9 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/RegistrationForm" element={<RegistrationForm />} />
+        <Route path="/LoginForm" element={<LoginForm />} />
+
         <Route path="/AngerView" element={<AngerView />} />
         <Route path="/CalmView" element={<CalmView />} />
         <Route path="/DisappointmentView" element={<DisappointmentView />} />

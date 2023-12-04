@@ -69,6 +69,30 @@ export default function StartPage() {
             >
               Znajdę dla Ciebie odpowiedni seans
             </Typography>
+            <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+            >
+              <Link href="/RegistrationForm">
+                <Button variant="contained">Zarejestruj się</Button>
+              </Link>
+              {/* <Link href="/LoginForm">
+                <Button variant="contained">Mam juz konto</Button>
+              </Link> */}
+            </Stack>
+            <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+              paddingBottom="10px"
+            >
+              <Link href="/LoginForm">
+                <Button>Mam juz konto</Button>
+              </Link>
+            </Stack>
             <Typography
               variant="h5"
               align="center"

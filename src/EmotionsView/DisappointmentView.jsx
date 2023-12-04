@@ -1,38 +1,37 @@
 // EmotionsView/DisappointmentView.js
 import React from "react";
 import { Paper, Typography } from "@mui/material";
+import ViewStyles from "./View";
 
-const DisapointmentView = () => {
+const DisappointmentView = () => {
   return (
     <Paper
-      style={{
-        padding: "20px",
-        backgroundColor: "#795548",
-        color: "#fff",
-        textAlign: "center",
-      }}
+      style={{ ...ViewStyles.paper, backgroundColor: "#795548", color: "#fff" }}
     >
-      <Typography variant="h4">Rozczarowanie</Typography>
-      <Typography variant="body1">
-        Rozczarowanie to uczucie spowodowane niezdolnością do spełnienia
-        oczekiwań. Często towarzyszy mu uczucie smutku, zniechęcenia i
-        niezadowolenia.
+      <Typography variant="h4" style={ViewStyles.heading}>
+        Rozczarowanie
       </Typography>
-      <Typography variant="h6" style={{ marginTop: "20px" }}>
+      <Typography variant="body1" style={ViewStyles.description}>
+        Rozczarowanie to uczucie spowodowane niezdolnością do spełnienia
+        oczekiwań. To emocja towarzysząca smutkowi i niezadowoleniu.
+      </Typography>
+      <Typography variant="h6" style={ViewStyles.colorAssociated}>
         Kolor związany z rozczarowaniem: #795548
       </Typography>
-      <Typography variant="h6" style={{ marginTop: "20px" }}>
+      <Typography variant="h6" style={ViewStyles.colorAssociated}>
         Lista filmów wywołujących rozczarowanie:
       </Typography>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
-        <li>Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.</li>
-        <li>Tytuł filmu 2: Opis filmu 2. Gra w nim Aktor 2.</li>
-        <li>Tytuł filmu 3: Opis filmu 3. Gra w nim Aktor 3.</li>
-        <li>Tytuł filmu 4: Opis filmu 4. Gra w nim Aktor 4.</li>
-        <li>Tytuł filmu 5: Opis filmu 5. Gra w nim Aktor 5.</li>
+      <ul style={ViewStyles.filmList}>
+        <li style={ViewStyles.filmListItem}>
+          Tytuł filmu 1: Opis filmu 1. Gra w nim Aktor 1.
+        </li>
+        <li style={ViewStyles.filmListItem}>
+          Tytuł filmu 2: Opis filmu 2. Gra w nim Aktor 2.
+        </li>
+        {/* ... inne filmy ... */}
       </ul>
     </Paper>
   );
 };
 
-export default DisapointmentView;
+export default DisappointmentView;
