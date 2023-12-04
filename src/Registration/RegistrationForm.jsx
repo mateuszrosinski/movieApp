@@ -1,6 +1,7 @@
 // RegistrationForm.jsx
 import React, { useState } from "react";
 import {
+  Link,
   Container,
   Paper,
   TextField,
@@ -103,9 +104,11 @@ const RegistrationForm = () => {
           >
             Zarejestruj Konto
           </Button>
-          <Typography margin="15px" variant="h6" align="center" gutterBottom>
-            Masz już konto?
-          </Typography>
+          <Link href="/LoginForm">
+            <Typography margin="15px" variant="h6" align="center" gutterBottom>
+              Masz już konto?
+            </Typography>
+          </Link>
         </form>
       </Paper>
     </Container>
