@@ -110,7 +110,9 @@ export default function StartPage() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Zaczynajmy</Button>
+              <Link href="/EmotionChoiceView">
+                <Button variant="contained">Zaczynajmy</Button>
+              </Link>
             </Stack>
           </Container>
         </Box>
