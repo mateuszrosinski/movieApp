@@ -80,7 +80,7 @@ const LoginForm = () => {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
+            color="secondary"
             style={{ marginTop: "20px" }}
           >
             Zaloguj
