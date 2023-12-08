@@ -5,9 +5,7 @@ import ViewStyles from "./View";
 
 const LoveView = () => {
   return (
-    <Paper
-      style={{ ...ViewStyles.paper, backgroundColor: "#e91e63", color: "#fff" }}
-    >
+    <Paper style={{ ...ViewStyles.paper, backgroundColor: "#e91e63" }}>
       <Typography variant="h4" style={ViewStyles.heading}>
         Miłość
       </Typography>

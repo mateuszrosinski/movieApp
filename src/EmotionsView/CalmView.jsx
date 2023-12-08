@@ -5,9 +5,7 @@ import ViewStyles from "./View";
 
 const CalmView = () => {
   return (
-    <Paper
-      style={{ ...ViewStyles.paper, backgroundColor: "#8bc34a", color: "#000" }}
-    >
+    <Paper style={{ ...ViewStyles.paper, backgroundColor: "#8bc34a" }}>
       <Typography variant="h4" style={ViewStyles.heading}>
         Spokój
       </Typography>

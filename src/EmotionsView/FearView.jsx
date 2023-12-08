@@ -5,9 +5,7 @@ import ViewStyles from "./View";
 
 const FearView = () => {
   return (
-    <Paper
-      style={{ ...ViewStyles.paper, backgroundColor: "#3f51b5", color: "#fff" }}
-    >
+    <Paper style={{ ...ViewStyles.paper, backgroundColor: "#3f51b5" }}>
       <Typography variant="h4" style={ViewStyles.heading}>
         Strach
       </Typography>

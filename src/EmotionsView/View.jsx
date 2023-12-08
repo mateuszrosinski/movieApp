@@ -5,6 +5,7 @@ const ViewStyles = {
     textAlign: "center",
     marginBottom: "20px",
     borderRadius: "8px",
+    color: "#fff",
   },
   heading: {
     marginBottom: "20px",
