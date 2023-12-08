@@ -5,9 +5,7 @@ import ViewStyles from "./View";
 
 const DisappointmentView = () => {
   return (
-    <Paper
-      style={{ ...ViewStyles.paper, backgroundColor: "#795548", color: "#fff" }}
-    >
+    <Paper style={{ ...ViewStyles.paper, backgroundColor: "#795548" }}>
       <Typography variant="h4" style={ViewStyles.heading}>
         Rozczarowanie
       </Typography>

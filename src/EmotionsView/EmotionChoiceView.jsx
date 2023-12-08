@@ -1,26 +1,23 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
-import MovieFilterIcon from "@mui/icons-material/MovieFilter";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
+
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import DisappointmentComponent from "./DisappointmentView";
-import JoyComponent from "./JoyView";
-import LoveComponent from "./LoveView";
-import FearComponent from "./FearView";
-import AngerComponent from "./AngerView";
-import CalmComponent from "./CalmView";
-import OptimismComponent from "./OptimismView";
-import SadnessComponent from "./SadnessView";
-import SurpriseComponent from "./SurpriseView";
-import RecklessComponent from "./RecklessView";
+import DisappointmentComponent from "../EmotionComponents/DisappointmentComponent";
+import JoyComponent from "../EmotionComponents/JoyComponent";
+import LoveComponent from "../EmotionComponents/LoveComponent";
+import FearComponent from "../EmotionComponents/FearComponent";
+import AngerComponent from "../EmotionComponents//AngerComponent";
+import CalmComponent from "../EmotionComponents/CalmComponent";
+import OptimismComponent from "../EmotionComponents/OptimismComponent";
+import SadnessComponent from "../EmotionComponents/SadnessComponent";
+import SurpriseComponent from "../EmotionComponents/SurpriseComponent";
+import RecklessComponent from "../EmotionComponents/RecklessComponent";
 
 const defaultTheme = createTheme();
 
