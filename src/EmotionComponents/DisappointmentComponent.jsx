@@ -23,7 +23,7 @@ const DissapointmentComponent = () => {
   };
 
   return (
-    <Link href="/DisappointmentView">
+    <Link href="/DisappointmentView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Rozczarowanie</Typography>
         <Typography variant="body2">Trochę rozczarowany i przybity.</Typography>

@@ -24,7 +24,7 @@ const RecklessComponent = () => {
   };
 
   return (
-    <Link href="/RecklessView">
+    <Link href="/RecklessView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Beztroski</Typography>
         <Typography variant="body2">Dobry nastrój, brak zmartwień.</Typography>

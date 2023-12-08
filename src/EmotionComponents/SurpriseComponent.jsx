@@ -23,7 +23,7 @@ const SurpriseComponent = () => {
   };
 
   return (
-    <Link href="/SurpriseView">
+    <Link href="/SurpriseView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Zaskoczenie</Typography>
         <Typography variant="body2">Zdziwiony i pod wrażeniem.</Typography>

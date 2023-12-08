@@ -23,7 +23,7 @@ const OptimismComponent = () => {
   };
 
   return (
-    <Link href="/OptimismView">
+    <Link href="/OptimismView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Optymizm</Typography>
         <Typography variant="body2">Pełen pozytywnej energii.</Typography>

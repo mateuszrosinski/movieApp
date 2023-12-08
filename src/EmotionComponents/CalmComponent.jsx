@@ -23,7 +23,7 @@ const CalmComponent = () => {
   };
 
   return (
-    <Link href="/CalmView">
+    <Link href="/CalmView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1" align="center">
           Spokój

@@ -24,7 +24,7 @@ const LoveComponent = () => {
   };
 
   return (
-    <Link href="/LoveView">
+    <Link href="/LoveView" underline="none">
       {/* Dodaj link do podstrony "Miłości" */}
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Miłość</Typography>
