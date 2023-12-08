@@ -24,7 +24,7 @@ const JoyComponent = () => {
   };
 
   return (
-    <Link href="/JoyView">
+    <Link href="/JoyView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Radość</Typography>
         <Typography variant="body2">Pełen entuzjazmu i uśmiechu.</Typography>

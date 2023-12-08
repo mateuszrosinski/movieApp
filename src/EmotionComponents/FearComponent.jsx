@@ -24,7 +24,7 @@ const FearComponent = () => {
   };
 
   return (
-    <Link href="/FearView">
+    <Link href="/FearView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Strach</Typography>
         <Typography variant="body2">Przerażony i pełen niepokoju.</Typography>

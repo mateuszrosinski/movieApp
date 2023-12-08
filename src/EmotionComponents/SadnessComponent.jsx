@@ -23,7 +23,7 @@ const SadnessComponent = () => {
   };
 
   return (
-    <Link href="/SadnessView">
+    <Link href="/SadnessView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Smutek</Typography>
         <Typography variant="body2">Trochę przygnębiony i smutny.</Typography>

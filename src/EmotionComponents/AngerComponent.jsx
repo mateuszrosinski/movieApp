@@ -24,7 +24,7 @@ const AngerComponent = () => {
   };
 
   return (
-    <Link href="/AngerView">
+    <Link href="/AngerView" underline="none">
       <Paper style={squareStyle}>
         <Typography variant="subtitle1">Złość</Typography>
         <Typography variant="body2">Sfrustrowany i zagniewany.</Typography>
